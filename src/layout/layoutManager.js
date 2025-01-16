@@ -1,7 +1,6 @@
 import OldLayout from "./oldLayout";
 import NewLayout from "./newLayout";
 import React, {useState, useEffect} from "react";
-import Button from "../components/elements/button";
 
 const LayoutManager = () => {
 
