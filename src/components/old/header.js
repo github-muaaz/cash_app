@@ -1,6 +1,6 @@
 import {Box, Typography} from "@mui/material";
 import Icon from "../elements/icon";
-import {sendNotification} from "../../api/telegram";
+// import {sendNotification} from "../../api/telegram";
 
 const Header = () => {
 
