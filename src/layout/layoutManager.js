@@ -28,8 +28,10 @@ const LayoutManager = () => {
                         width: 'fit-content',
                         backgroundColor: 'yellow',
                         position: 'absolute',
-                        top: '10px',
-                        right: '10px',
+                        top: '60px',
+                        right: '0px',
+                        fontSize: '10px !important',
+                        padding: '5px 10px !important'
                     }}
                     onClick={randomChatId}
                 >
