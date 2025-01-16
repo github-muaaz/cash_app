@@ -4,7 +4,7 @@ import CardBox from "./cardBox";
 
 const List = () => {
 
-    const [list, setList] = useState([
+    const [list] = useState([
         {
             image: 'car',
             name: "Auto & Transport",
