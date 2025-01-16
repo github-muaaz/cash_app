@@ -1,11 +1,11 @@
 import OldLayout from "./oldLayout";
 import NewLayout from "./newLayout";
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import Button from "../components/elements/button";
 
 const LayoutManager = () => {
 
-    const [chatId, setChatId] = useState(null);
+    const [chat_id, setChatId] = useState(null);
 
   useEffect(() => {
     // Ensure the Telegram WebApp object is available
