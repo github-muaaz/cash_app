@@ -5,7 +5,19 @@ import Button from "../components/elements/button";
 
 const LayoutManager = () => {
 
-    const [chat_id, setChatId] = useState(process.env.TELEGRAM_USER_ID);
+    const [chatId, setChatId] = useState(null);
+
+  useEffect(() => {
+    // Ensure the Telegram WebApp object is available
+    if (window.Telegram.WebApp) {
+      const initDataUnsafe = window.Telegram.WebApp.initDataUnsafe;
+
+      // Extract chat_id from the initDataUnsafe object
+      if (initDataUnsafe && initDataUnsafe.user) {
+        setChatId(initDataUnsafe.user.id); // This is usually the user ID (chat ID for private chats)
+      }
+    }
+  }, []);
 
     const layouts = {
         old: OldLayout,
