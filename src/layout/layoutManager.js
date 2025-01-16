@@ -5,7 +5,7 @@ import Button from "../components/elements/button";
 
 const LayoutManager = () => {
 
-    const [chat_id] = useState(null);
+    const [chat_id, setChatId] = useState(null);
 
   useEffect(() => {
     // Ensure the Telegram WebApp object is available
