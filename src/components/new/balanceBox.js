@@ -6,7 +6,7 @@ import Button from "../elements/button";
 
 const BalanceBox = () => {
 
-    const [balance, setBalance] = useState(4402.32)
+    const [balance] = useState(4402.32)
 
     return(
         <Box
