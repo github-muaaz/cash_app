@@ -5,7 +5,7 @@ import TitleCard from "./titleCard";
 
 const FavouriteBox = () => {
 
-    const [list, setList] = useState([
+    const [list] = useState([
         {
             name: 'Transfers',
             icon: 'transfers'
